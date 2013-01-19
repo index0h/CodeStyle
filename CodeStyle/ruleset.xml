@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<ruleset name="CodeStyle">
+    <description>index0h code standard, based on PSR-2</description>
+
+    <!-- 2. General -->
+
+    <!-- 2.1 Basic Coding Standard -->
+
+    <!-- Include the whole PSR-2 standard -->
+    <rule ref="PSR2"/>
+    <rule ref="Squiz.PHP.EmbeddedPhp"/>
+
+    <!-- 2.2 Files -->
+    <rule ref="Generic.Files.OneClassPerFile"/>
+    <rule ref="Generic.Files.OneInterfacePerFile"/>
+
+    <!-- 2.3 Lines -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="120"/>
+        </properties>
+    </rule>
+
+    <!-- 2.4 Indenting -->
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+    <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+    <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
+
+    <!-- 2.5 Keywords and True/False/Null -->
+
+    <!-- 2.6 Functions -->
+    <rule ref="Squiz.Functions.GlobalFunction"/>
+    <rule ref="Squiz.PHP.NonExecutableCode"/>
+    <rule ref="Squiz.PHP.DisallowObEndFlush"/>
+    <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
+    <rule ref="Squiz.PHP.Eval"/>
+    <rule ref="Generic.PHP.DeprecatedFunctions"/>
+    <rule ref="Generic.PHP.ForbiddenFunctions"/>
+
+    <!--2.7 Commenting -->
+    <rule ref="Squiz.Commenting.EmptyCatchComment"/>
+    <rule ref="Squiz.Commenting.DocCommentAlignment"/>
+    <rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
+    <rule ref="Squiz.Commenting.LongConditionClosingComment"/>
+    <rule ref="Squiz.Commenting.PostStatementComment"/>
+    <rule ref="Squiz.PHP.Heredoc"/>
+
+
+    <rule ref="PEAR.Commenting.FileComment.InvalidVersion">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FileComment.MissingVersion">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.ClassComment.MissingTag">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="CodeStyle.Commenting.FileComment.IncorrectAuthor">
+        <severity>0</severity>
+    </rule>
+    <rule ref="CodeStyle.Commenting.FileComment.IncorrectCopyright">
+        <severity>0</severity>
+    </rule>
+    <rule ref="CodeStyle.Commenting.FileComment.IncorrectLicenseURL">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="CodeStyle.Commenting.FileComment.IncorrectLicenseName">
+        <severity>0</severity>
+    </rule>
+    <rule ref="CodeStyle.Commenting.FileComment.IncorrectCopyright">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.ClassComment"/>
+    <rule ref="PEAR.Commenting.FunctionComment"/>
+    <rule ref="PEAR.Commenting.InlineComment"/>
+    <!-- 2.8 Operators -->
+    <rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
+    <rule ref="Squiz.Objects.ObjectInstantiation"/>
+    <rule ref="Squiz.Operators.ValidLogicalOperators"/>
+    <rule ref="Squiz.Operators.IncrementDecrementUsage"/>
+
+    <!-- 3. Namespace and Use Declarations -->
+
+    <!-- 4. Classes, Properties, and Methods -->
+
+    <!-- 4.1. Extends and Implements -->
+
+    <!-- 4.2. Properties -->
+
+    <!-- 4.3 Methods -->
+    <rule ref="Generic.NamingConventions.ConstructorName"/>
+    <rule ref="Squiz.Scope.StaticThisUsage"/>
+
+    <!-- 4.3 Method Arguments -->
+
+    <!-- 4.4. abstract, final, and static -->
+
+    <!-- 4.5 Method and Function Calls -->
+    <rule ref="Generic.Functions.CallTimePassByReference"/>
+
+    <!-- 5. Control Structures -->
+
+    <!-- 5.1. if, elseif, else -->
+
+    <!-- 5.2. switch, case -->
+
+    <!-- 6. Closures -->
+    <rule ref="Generic.PHP.NoSilencedErrors"/>
+
+    <!-- 7. External tools -->
+    <rule ref="Squiz.Debug.JSLint"/>
+    <rule ref="CodeStyle.Debug.CSSLint.ExternalTool">
+        <type>error</type>
+    </rule>
+
+    <!-- 8. CodeAnalysis -->
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+    <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+
+    <!-- -->
+    <rule ref="Generic.Strings.UnnecessaryStringConcat"/>
+    <rule ref="Squiz.Strings.EchoedStrings"/>
+    <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
+</ruleset>

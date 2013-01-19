@@ -1,0 +1,32 @@
+{
+    "name":"index0h/CodeStyle",
+    "description":"index0h code standard, based on PSR-2.",
+    "type":"library",
+    "version":"0.0.1",
+    "keywords":[
+        "phpcs",
+        "Code style"
+    ],
+    "homepage":"https://github.com/index0h/CodeStyle",
+    "license":"BSD-3-Clause",
+    "authors":[
+        {
+            "name":"Roman Levishchenko",
+            "email":"index.0h@gmail.com",
+            "homepage":"index0h.net",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "issues":"https://github.com/index0h/CodeStyle/issues",
+        "source":"https://github.com/index0h/CodeStyle"
+    },
+    "autoload":{
+        "classmap":[
+            "CodeStyle"
+        ]
+    },
+    "require":{
+        "php":">=5.3.3"
+    }
+}
