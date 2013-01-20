@@ -114,7 +114,9 @@
     <rule ref="Generic.PHP.NoSilencedErrors"/>
 
     <!-- 7. External tools -->
-    <rule ref="Squiz.Debug.JSLint"/>
+    <rule ref="Squiz.Debug.JSLint.ExternalTool">
+        <type>error</type>
+    </rule>
     <rule ref="CodeStyle.Debug.CSSLint.ExternalTool">
         <type>error</type>
     </rule>
