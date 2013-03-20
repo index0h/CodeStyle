@@ -59,22 +59,28 @@
         <severity>0</severity>
     </rule>
 
-    <rule ref="CodeStyle.Commenting.FileComment.IncorrectAuthor">
+    <rule ref="Squiz.Commenting.FileComment.IncorrectAuthor">
         <severity>0</severity>
     </rule>
-    <rule ref="CodeStyle.Commenting.FileComment.IncorrectCopyright">
+    <rule ref="Squiz.Commenting.FileComment.IncorrectCopyright">
         <severity>0</severity>
     </rule>
-    <rule ref="CodeStyle.Commenting.FileComment.IncorrectLicenseURL">
+    <rule ref="Squiz.Commenting.FileComment.IncorrectLicenseURL">
         <severity>0</severity>
     </rule>
 
-    <rule ref="CodeStyle.Commenting.FileComment.IncorrectLicenseName">
+    <rule ref="Squiz.Commenting.FileComment.IncorrectLicenseName">
         <severity>0</severity>
     </rule>
-    <rule ref="CodeStyle.Commenting.FileComment.IncorrectCopyright">
+    <rule ref="Squiz.Commenting.FileComment.IncorrectCopyright">
         <severity>0</severity>
     </rule>
+    
+    <rule ref="Squiz.Sniffs.Commenting.BlockComment" />
+    <rule ref="Squiz.Sniffs.Commenting.ClassComment" />
+    <rule ref="Squiz.Sniffs.Commenting.FunctionComment" />
+    <rule ref="Squiz.Sniffs.Commenting.InlineComment" />
+    <rule ref="Squiz.Sniffs.Commenting.VariableComment" />
 
     <rule ref="PEAR.Commenting.ClassComment"/>
     <rule ref="PEAR.Commenting.FunctionComment"/>
@@ -115,9 +121,6 @@
 
     <!-- 7. External tools -->
     <rule ref="Squiz.Debug.JSLint.ExternalTool">
-        <type>error</type>
-    </rule>
-    <rule ref="CodeStyle.Debug.CSSLint.ExternalTool">
         <type>error</type>
     </rule>
 
